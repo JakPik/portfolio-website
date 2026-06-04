@@ -1,0 +1,203 @@
+.content_layout {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 91vh;
+    background-image: linear-gradient(#933d0025 0%,#000000b8 30%, #000000b8 70%, #933d0025 100%), url(../img/banner_wood.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit:fill;
+}
+
+.menu_guide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: self-start;
+    gap: 5px;
+    padding: 0px 20px;
+}
+
+.content_layout button {
+    width: 100%;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.content_layout button:hover {
+    box-shadow: 5px 5px 10px rgba(173, 174, 230, 0.75);
+    background-color: rgba(173, 216, 230, 0.2);
+    border-color: rgb(255, 255, 255);
+}
+
+.content_layout button.selected {
+    background-color: rgba(173, 216, 230, 0.2);
+    border-color: rgb(255, 255, 255);
+}
+
+.content {
+    display:block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    height: 95%;
+    overflow: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    backdrop-filter:blur(5px);
+    transition: all 0.6s ease-out;
+}
+
+.content.hidden {
+    content-visibility: hidden;
+}
+
+.card {
+    margin: 10px 0px;
+    color: white;
+    text-align: center;
+    justify-self: center;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 90%;
+    background-image: linear-gradient(135deg, #ff000022 0%, #ec8e0058 100%);
+    transition: all 0.8s ease
+}
+
+.card.hidden {
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+.card .header div h2 {
+    margin: 0;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.header div {
+    align-self: center;
+}
+
+.tags {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 12px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);;
+    padding: 2px 10px;
+}
+
+.divider {
+    margin: 15px 5px;
+    border: 1px solid;
+    border-image: linear-gradient(
+        to right,
+        #ffffff 50%,
+        #ffffff00 95%
+    ) 1;
+    display: block;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: auto;
+    width: 60%;
+    justify-self: center;
+}
+
+.links a {
+    width: 150px;
+    height: 30px;
+    border: 1px solid #ffffff80;
+    border-radius: 5px;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #ffffff40;
+    border-color: #fff;
+}
+
+
+
+
+
+
+
+.carousel-track img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+    height: 70px;
+}
+
+
+
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border: #00000080;
+  transition: width 0.8s ease-in-out;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    align-items: center;
+    width: auto;
+}
+
+button.prev, button.next {
+  background: rgba(0, 0, 0, 0.175);
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.3em 0.6em;
+  z-index: 1;
+  width: auto;
+  height: auto;
+}
+button:hover { background: rgba(0, 0, 0, 0.3); }

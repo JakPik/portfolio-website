@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JPikal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="styleSheet" href="src/CSS/general.css">
+        <link rel="stylesheet" href="src/CSS/portfolio.css"/>
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <button onclick="pageNavigation('index')" id="home">
+                <img src="src\img\JP_logo.png" alt="JP_logo" width="30" height="30">
+                <p>Jakub Pikal</p>
+            </button>
+            <div class="nav">
+                <button onclick="pageNavigation('about')">About</button>
+                <button class="selected_button">Portfolio</button>
+                <button onclick="pageNavigation('contact')">Contact</button>
+            </div>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/yourprofile" style="padding-right: 2%">
+                    <i class="devicon-linkedin-plain colored" style="font-size: 25px;"></i>
+                </a>
+                <a href="https://github.com/JakPik" target="_blank">
+                    <i class="devicon-github-original" style="font-size: 25px;"></i>
+                </a>
+                <a href="mailto:someone@example.com" style="text-decoration: none; color: #333;">
+                    <i class="fas fa-envelope" style="font-size: 25px;"></i>
+                </a>
+            </div>
+        </header>
+        <div class="content_layout">
+            <div class="menu_guide">
+                <h2>Categories</h2>
+                <button class="selected", onclick="loadProjects('ALL', this)">All</button>
+                <button onclick="loadProjects('GAME', this)">Game Projects</button>
+                <button onclick="loadProjects('SOFTWARE', this)">Software Projects</button>
+                <button onclick="loadProjects('TABLETOP', this)">Tabletop Design</button>
+                <button onclick="loadProjects('ART', this)">3D Art & Assets</button>
+                <button onclick="loadProjects('ACADEMIC', this)">Academic Work</button>
+            </div>
+            <div class="content">
+                <article class="card">
+                    <div class="header">
+                        <div>
+                            <h2>Project TitleProject TitleProject Title</h2>
+                            <div class="tags">
+                                <span class="tag">Game Design</span>
+                                <span class="tag">Game Development</span>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <button class="prev"><</button>
+                                <div class="carousel">
+                                    <div class="carousel-track">
+                                        <img src="src/img/banner_wood.jpg" alt="Project Image 1">
+                                        <img src="src/img/banner_wood.jpg" alt="Project Image 2">
+                                    </div>
+                                </div>
+                            <button class="next">></button>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eos placeat distinctio sunt repellat illo, molestias non eveniet animi voluptatem fuga aspernatur. Velit in dolorum ex, quia eos nisi? Fugiat.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste cupiditate rem commodi culpa, enim, ullam neque animi, dicta aperiam facere eveniet sit! Velit architecto voluptas sunt, porro deleniti distinctio et!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rerum dolorum voluptatum, fugit dolore eos praesentium obcaecati. Sit vero harum tempora accusamus ab dignissimos, veniam repudiandae ut, nobis nemo maxime.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam dolor laborum amet nesciunt impedit quis labore accusantium, eveniet, quam ratione nihil ab? Hic illo porro repudiandae voluptatem, nemo voluptatibus?
+                    </p>
+                    <div class="links">
+                        <a href="#">direct to project</a>
+                        <a href="#">view more</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="header">
+                        <div>
+                            <h2>Project TitleProject TitleProject Title</h2>
+                            <div class="tags">
+                                <span class="tag">Game Design</span>
+                                <span class="tag">Game Development</span>
+                            </div>
+                        </div>
+                        <div class="container">
+                        <button class="prev"><</button>
+
+                        <div class="carousel">
+                            <div class="carousel-track">
+                                <img src="src/img/banner_wood.jpg" alt="Project Image 1">
+                                <img src="src/img/banner_wood.jpg" alt="Project Image 2">
+                            </div>
+                        </div>
+                        <button class="next">></button>
+
+                    </div>
+                    </div>
+                    <div class="divider"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eos placeat distinctio sunt repellat illo, molestias non eveniet animi voluptatem fuga aspernatur. Velit in dolorum ex, quia eos nisi? Fugiat.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste cupiditate rem commodi culpa, enim, ullam neque animi, dicta aperiam facere eveniet sit! Velit architecto voluptas sunt, porro deleniti distinctio et!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rerum dolorum voluptatum, fugit dolore eos praesentium obcaecati. Sit vero harum tempora accusamus ab dignissimos, veniam repudiandae ut, nobis nemo maxime.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam dolor laborum amet nesciunt impedit quis labore accusantium, eveniet, quam ratione nihil ab? Hic illo porro repudiandae voluptatem, nemo voluptatibus?
+                    </p>
+                    <div class="links">
+                        <a href="#">direct to project</a>
+                        <a href="#">view more</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="header">
+                        <div>
+                            <h2>Project TitleProject TitleProject Title</h2>
+                            <div class="tags">
+                                <span class="tag">Game Design</span>
+                                <span class="tag">Game Development</span>
+                            </div>
+                        </div>
+                        <div class="container">
+                        <button class="prev"><</button>
+
+                        <div class="carousel">
+                            <div class="carousel-track">
+                                <img src="src/img/banner_wood.jpg" alt="Project Image 1">
+                                <img src="src/img/banner_wood.jpg" alt="Project Image 2">
+                            </div>
+                        </div>
+                        <button class="next">></button>
+
+                    </div>
+                    </div>
+                    <div class="divider"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eos placeat distinctio sunt repellat illo, molestias non eveniet animi voluptatem fuga aspernatur. Velit in dolorum ex, quia eos nisi? Fugiat.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste cupiditate rem commodi culpa, enim, ullam neque animi, dicta aperiam facere eveniet sit! Velit architecto voluptas sunt, porro deleniti distinctio et!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rerum dolorum voluptatum, fugit dolore eos praesentium obcaecati. Sit vero harum tempora accusamus ab dignissimos, veniam repudiandae ut, nobis nemo maxime.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam dolor laborum amet nesciunt impedit quis labore accusantium, eveniet, quam ratione nihil ab? Hic illo porro repudiandae voluptatem, nemo voluptatibus?
+                    </p>
+                    <div class="links">
+                        <a href="#">direct to project</a>
+                        <a href="#">view more</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="header">
+                        <div>
+                            <h2>Project TitleProject TitleProject Title</h2>
+                            <div class="tags">
+                                <span class="tag">Game Design</span>
+                                <span class="tag">Game Development</span>
+                            </div>
+                        </div>
+                        <div class="container">
+                        <button class="prev"><</button>
+
+                        <div class="carousel">
+                            <div class="carousel-track">
+                                <img src="src/img/banner_wood.jpg" alt="Project Image 1">
+                                <img src="src/img/banner_wood.jpg" alt="Project Image 2">
+                            </div>
+                        </div>
+                        <button class="next">></button>
+
+                    </div>
+                    </div>
+                    <div class="divider"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eos placeat distinctio sunt repellat illo, molestias non eveniet animi voluptatem fuga aspernatur. Velit in dolorum ex, quia eos nisi? Fugiat.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste cupiditate rem commodi culpa, enim, ullam neque animi, dicta aperiam facere eveniet sit! Velit architecto voluptas sunt, porro deleniti distinctio et!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rerum dolorum voluptatum, fugit dolore eos praesentium obcaecati. Sit vero harum tempora accusamus ab dignissimos, veniam repudiandae ut, nobis nemo maxime.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam dolor laborum amet nesciunt impedit quis labore accusantium, eveniet, quam ratione nihil ab? Hic illo porro repudiandae voluptatem, nemo voluptatibus?
+                    </p>
+                    <div class="links">
+                        <a href="#">direct to project</a>
+                        <a href="#">view more</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </body>
+    <script src="src/JS/main.js"></script>
+    <script src="src/JS/portfolio.js"></script>
+</html>

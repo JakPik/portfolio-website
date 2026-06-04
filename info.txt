@@ -1,0 +1,12 @@
+main page
+
+portfolio
+    - games
+    - blender renders
+
+
+
+
+about
+technologies
+portfolio
