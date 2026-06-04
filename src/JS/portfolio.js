@@ -352,5 +352,5 @@ catch {
 loadProjects("ALL", document.querySelector('.selected'))
 }
 
-loadJson
+loadJson()
 
