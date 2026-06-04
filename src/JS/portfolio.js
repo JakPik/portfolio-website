@@ -338,8 +338,6 @@ function loadProjects(tag, button) {
     });
 }
 
-loadProjects("ALL", document.querySelector('.selected'))
-
 async function loadJson() {
 try {
     const rest = await fetch("./json/projects.json")
@@ -351,4 +349,8 @@ try {
 catch {
     console.log("Can not load projects.json")
 }
+loadProjects("ALL", document.querySelector('.selected'))
 }
+
+loadJson
+
