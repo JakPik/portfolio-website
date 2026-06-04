@@ -340,7 +340,7 @@ function loadProjects(tag, button) {
 
 async function loadJson() {
 try {
-    const rest = await fetch("./json/projects.json")
+    const rest = await fetch("./src/json/projects.json")
   .then(res => res.json())
   .then(data => {
     proj_json = data
