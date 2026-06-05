@@ -1,4 +1,5 @@
 import * as CONSTANTS from "./constants.js"
+import {constructCarousel} from "./carousel.js"
 import {proj} from "./localJSON.js"
 
 let proj_json = JSON.parse(proj)

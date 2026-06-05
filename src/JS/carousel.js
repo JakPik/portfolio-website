@@ -1,4 +1,4 @@
-function constructCarousel(images) {
+export function constructCarousel(images) {
     const container = document.createElement('div')
     container.classList.add("container")
 
