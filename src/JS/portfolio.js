@@ -1,5 +1,5 @@
-import * as CONSTANTS from "./src/JS/constants.js"
-import {proj} from "./src/JS/localJSON.js"
+import * as CONSTANTS from "./constants.js"
+import {proj} from "./localJSON.js"
 
 let proj_json = JSON.parse(proj)
 
