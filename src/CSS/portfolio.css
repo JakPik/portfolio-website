@@ -124,6 +124,7 @@
 }
 
 .links {
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: auto;
@@ -153,12 +154,7 @@
 
 
 
-.carousel-track img {
-    width: 100%;
-    max-width: 200px;
-    border-radius: 5px;
-    height: 70px;
-}
+
 
 
 
@@ -171,7 +167,7 @@
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border: #00000080;
-  transition: width 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .carousel-track {
@@ -185,19 +181,22 @@
     flex-wrap: nowrap;
     padding: 10px;
     align-items: center;
-    width: auto;
+    justify-self: end;
+    width:min-content;
+
 }
 
 button.prev, button.next {
   background: rgba(0, 0, 0, 0.175);
   border: none;
   color: white;
-  font-size: 1.5em;
+  font-size: 20px;
   cursor: pointer;
   border-radius: 50%;
-  padding: 0.3em 0.6em;
   z-index: 1;
-  width: auto;
-  height: auto;
+  padding: 2px;
+  width: 30px;
+  height: 40px;
+  margin: 5px;
 }
-button:hover { background: rgba(0, 0, 0, 0.3); }
+button.prev:hover, button.next:hover { background: rgba(0, 0, 0, 0.3); }

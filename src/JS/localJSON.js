@@ -1,20 +1,16 @@
-{
+export const proj = `{
     "projects": [
         {
             "title": "Digital D&D Character Sheet",
             "tags": [
                 "SOFTWARE_DEV", "UI_UX", "ACADEMIC"
             ],
-            "description": ["Windows application developed using WPF.",
-                        "The application allows users to create and manage their Dungeons & Dragons character sheets digitally, providing an intuitive interface for tracking character stats, inventory, and abilities.",
-                        "This project was developed as part of a school assignment, and I was responsible for the entire development process, from design to implementation.",
-                        "The motivation behind this project was to create app that would be more flexible for users to not only choose D&D content but also to add custom homebrew content."
-                    ],
-            "images": ["SOFTWARE_DEV", "UI_UX", "ACADEMIC"],
+            "description": ["Lorem ipsu", "m dolor sit amet,"," consectetur adipiscing elit.Sed do"," eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem"," ips","um dolor, sit amet consectetur adipisicing elit. Optio eos placeat distinctio sunt repellat illo, molestias non eveniet animi voluptatem fuga aspernatur. Velit in dolorum ex, quia eos nisi? Fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste cupiditate rem commodi culpa, enim, ullam neque animi, dicta aperiam facere eveniet sit! Velit architecto voluptas sunt, porro deleniti distinctio et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rerum dolorum voluptatum, fugit dolore eos praesentium obcaecati. Sit vero harum tempora accusamus ab dignissimos, veniam repudiandae ut, nobis nemo maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam dolor laborum amet nesciunt impedit quis labore accusantium, eveniet, quam ratione nihil ab? Hic illo porro repudiandae voluptatem"," nemo voluptatibus?"],
+            "images": ["Electrician/Edu_circuit.png", "JP_logo.png", "Ranger_Beast Master.png"],
             "page": "page url",
             "src": {
                 "button_label": "Project on Github",
-                "button_url": ""
+                "button_url": "https://github.com/JakPik/Interactive-DnD-Character-Sheet"
             }
         },
         {
@@ -23,12 +19,9 @@
                 "GAME_DEV", "GAME_DESIGN", "LEVEL_DESIGN", "ACADEMIC"
             ],
             "description": "Long text",
-            "images": ["url1", "url2"],
-            "page": "page url",
-            "src": {
-                "button_label": "",
-                "button_url": ""
-            }
+            "images": [],
+            "page": null,
+            "src": null
         },
         {
             "title": "Electrician",
@@ -52,8 +45,8 @@
             "images": ["url1", "url2"],
             "page": "page url",
             "src": {
-                "button_label": "View PDF",
-                "button_url": "https://homebrewery.naturalcrit.com/share/l9DhVzxzMbL0"
+                "button_label": null,
+                "button_url": "test"
             }
         },
         {
@@ -122,4 +115,4 @@
             }
         }
     ]
-}
+}`
