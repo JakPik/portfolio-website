@@ -76,23 +76,20 @@ function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }   
 
-function loadJson() {
-try {
-    const rest = await fetch("./src/json/projects.json")
-  .then(res => res.json())
-  .then(data => {
-    proj_json = data
-  })
-  }
-catch {
-    console.log("Can not load projects.json")
-}
-}
 
 init()
 
 async function init() {
-    loadJson()
+    try {
+        const rest = await fetch("./src/json/projects.json")
+        .then(res => res.json())
+        .then(data => {
+            proj_json = data
+        })
+    }
+    catch {
+        console.log("Can not load projects.json")
+    }
     cur_tag = "ALL"
     cur_button = document.querySelector('.selected')
 
