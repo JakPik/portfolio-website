@@ -1,13 +1,13 @@
 {
-    "projects": [
-        "Electrician",
-        "Digital_DnD_CharacterSheet",
-        "DnD_RangerBeastMaster",
-        "AcuraNSX",
-        "Arimaa",
-        "DnD_WebViewer",
-        "GDLevel_Reborn",
-        "WorkoutApp",
-        "IndimensianaJones"
-    ]
+  "projects": [
+    "Electrician",
+    "Digital_DnD_CharacterSheet",
+    "DnD_WebViewer",
+    "IndimensianaJones",
+    "Arimaa",
+    "AcuraNSX",
+    "DnD_RangerBeastMaster",
+    "GDLevel_Reborn",
+    "WorkoutApp"
+  ]
 }

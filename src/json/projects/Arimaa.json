@@ -4,8 +4,9 @@
         "GAME_DEV", "GAME_DESIGN", "ACADEMIC"
     ],
     "description": [
-        "This project was done as part of Java course on university.",
-        "It focuses on taking existing game and rules and implementing them using Java both as frontend and backend logick."
+        "Implementation of the board game Arimaa in Java as part of a university course project. ",
+        "The project focuses on translating a rule-heavy abstract strategy game into a fully functional digital version, handling complex game states and move validation logic. ",
+        "Development started from a command-line prototype and was later extended into a full graphical user interface, covering both core game logic and user interaction layers within a single Java codebase."
     ],
     "images": [],
     "page": null,

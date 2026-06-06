@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JPikal/AboutMe</title>
+        <link rel="icon" href="./src/img/JP_logo.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="styleSheet" href="src/CSS/general.css">
+        <link rel="styleSheet" href="src/CSS/header.css">
+        <link rel="styleSheet" href="src/CSS/aboutMe.css">
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <div id="imageModal" class="modal" style="display: none;" onclick="closeModal()">
+            <img class="modal-content" id="modalImage" alt="modalImage" src="./src/img/Electrician/Edu_circuit.png">
+        </div>
+        <header>
+            <button onclick="pageNavigation('index')" id="home" >
+                <img src="src\img\JP_logo.png" alt="JP_logo">
+                <p>Jakub Pikal</p>
+            </button>
+            <div class="nav">
+                <button class="selected">About Me</button>
+                <button onclick="pageNavigation('portfolio')">Portfolio</button>
+            </div>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/jakub-pikal-8201b7283/" style="padding-right: 2%" target="_blank">
+                    <i class="devicon-linkedin-plain colored"></i>
+                </a>
+                <a href="https://github.com/JakPik" target="_blank">
+                    <i class="devicon-github-original"></i>
+                </a>
+                <a href="mailto:jakub.pikal@gmail.com" style="text-decoration: none; color: #333;">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </header>
+        <main class="about-page">
+
+        <!-- HERO -->
+        <section class="about-section">
+            <h1>About Me</h1>
+
+            <h3>
+            Game developer and designer focused on gameplay systems, level design,
+            and structured interactive experiences.
+            </h3>
+
+            <p>
+            I work at the intersection of game programming and game design, with a
+            strong interest in building mechanics-driven experiences where systems,
+            player interaction, and design logic come together.
+            </p>
+        </section>
+
+        <hr class="divider" />
+
+        <!-- DESIGN FOCUS -->
+        <section class="about-section">
+            <h2>Design Focus</h2>
+
+            <div class="card-grid">
+            <div class="info-card">
+                <h3>Level Design</h3>
+                <p>Structuring player experience through space, progression, and pacing.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Systems Design</h3>
+                <p>Designing rules and mechanics that shape player behavior.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Narrative Systems</h3>
+                <p>Branching and choice-driven experiences with gameplay integration.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Gameplay Mechanics</h3>
+                <p>Turning rules into interactive and engaging gameplay loops.</p>
+            </div>
+            </div>
+
+            <div class="highlight-box">
+            I am especially interested in how complex systems can be translated into
+            clear, engaging gameplay experiences.
+            </div>
+        </section>
+
+        <hr class="divider" />
+
+        <!-- STRENGTHS -->
+        <section class="about-section">
+            <h2>Strengths</h2>
+
+            <ul class="bullet-grid">
+            <li>Gameplay systems programming (C# / Unity)</li>
+            <li>Design thinking and mechanics structuring</li>
+            <li>Problem-solving in complex interactive systems</li>
+            <li>Team coordination and leadership in projects</li>
+            <li>End-to-end project development (design → implementation)</li>
+            </ul>
+
+            <div class="highlight-box">
+            I often naturally take a coordinating or leadership role in group projects,
+            especially when aligning design and technical direction is required.
+            </div>
+        </section>
+
+        <hr class="divider" />
+
+        <!-- TECH STACK -->
+        <section class="about-section">
+
+            <h2>Technical Skills</h2>
+
+            <div class="skills-container">
+
+                <!-- CODE EXPERIENCE -->
+                <div class="skills-frame">
+                <h3>Programming</h3>
+                <div class="skills-grid">
+
+                    <div class="pill"><i class="devicon-c-original colored"></i> C</div>
+                    <div class="pill"><i class="devicon-cplusplus-plain colored"></i> C++</div>
+                    <div class="pill"><i class="devicon-csharp-plain colored"></i> C#</div>
+                    <div class="pill"><i class="devicon-java-plain colored"></i> Java</div>
+                    <div class="pill"><i class="devicon-kotlin-plain colored"></i> Kotlin</div>
+                    <div class="pill"><i class="devicon-python-plain colored"></i> Python</div>
+                    <div class="pill"><i class="devicon-html5-plain colored"></i> HTML5</div>
+                    <div class="pill"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
+                    <div class="pill"><i class="devicon-css3-plain colored"></i> CSS3</div>
+
+                </div>
+                </div>
+
+                <!-- TOOLS -->
+                <div class="skills-frame">
+                <h3>Tools & Engines</h3>
+                <div class="skills-grid">
+
+                    <div class="pill"><i class="devicon-git-plain colored"></i> Git</div>
+                    <div class="pill"><i class="devicon-github-original"></i> GitHub</div>
+                    <div class="pill"><i class="devicon-unity-plain colored"></i> Unity</div>
+                    <div class="pill"><i class="devicon-blender-original colored"></i> Blender</div>
+                    <div class="pill"><i class="devicon-inkscape-plain"></i> Inkscape</div>
+                    <div class="pill"><i class="devicon-gimp-plain colored"></i> GIMP</div>
+
+                </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr class="divider" />
+
+        <!-- DESIGN MINDSET -->
+        <section class="about-section">
+            <h2>Design Mindset</h2>
+
+            <blockquote class="quote">
+            Good game design is clean, engaging, and systematic.
+            </blockquote>
+
+            <p>
+            I focus on simplifying complex systems into intuitive player experiences,
+            reducing unnecessary friction in UI and controls while preserving depth
+            in gameplay mechanics.
+            </p>
+        </section>
+
+        <hr class="divider" />
+
+        <!-- BACKGROUND -->
+        <section class="about-section">
+            <h2>Background</h2>
+
+            <p>
+            I am currently completing my bachelor’s degree and preparing for a master’s program.
+            Alongside my studies, I work part-time as an IT tester, gaining experience in
+            structured systems and software workflows.
+            </p>
+
+            <p>
+            My goal is to work in gameplay or game design roles where I can contribute to
+            creative decision-making and system design while leveraging my technical background.
+            </p>
+        </section>
+
+        </main>
+    </body>
+    <script src="src/JS/modalControl.js"></script>
+    <script src="src/JS/main.js"></script>
+</html>

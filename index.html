@@ -3,41 +3,42 @@
     <head>
         <meta charset="UTF-8">
         <title>JPikal</title>
+        <link rel="icon" href="./src/img/JP_logo.png" type="image/png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="styleSheet" href="style.css">
+        <link rel="styleSheet" href="src/CSS/home.css">
         <link rel="styleSheet" href="src/CSS/general.css">
+        <link rel="styleSheet" href="src/CSS/header.css">
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
         <div id="imageModal" class="modal" style="display: none;" onclick="closeModal()">
-            <img class="modal-content" id="modalImage" alt="modalImage" src="./src/img/Electrician/Edu_circuit.png">
+            <img class="modal-content" id="modalImage" alt="modalImage" src="../img/Electrician/Edu_circuit.png">
         </div>
         <header>
-            <button class="selected_button" id="home" >
+            <button class="selected" id="home" >
                 <img src="src\img\JP_logo.png" alt="JP_logo">
                 <p>Jakub Pikal</p>
             </button>
             <div class="nav">
-                <button onclick="pageNavigation('about')">About</button>
+                <button onclick="pageNavigation('aboutMe')">About Me</button>
                 <button onclick="pageNavigation('portfolio')">Portfolio</button>
-                <button onclick="pageNavigation('contact')">Contact</button>
             </div>
             <div class="socials">
                 <a href="https://www.linkedin.com/in/jakub-pikal-8201b7283/" style="padding-right: 2%" target="_blank">
                     <i class="devicon-linkedin-plain colored"></i>
                 </a>
                 <a href="https://github.com/JakPik" target="_blank">
-                    <i class="devicon-github-original""></i>
+                    <i class="devicon-github-original"></i>
                 </a>
-                <a href="mailto:someone@example.com" style="text-decoration: none; color: #333;">
+                <a href="mailto:jakub.pikal@gmail.com" style="text-decoration: none; color: #333;">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
         </header>
         <div class="hero-image">
-            <div class="card" style="margin-top: 520px">
+            <div class="card">
                 <h1>Game Developer & Designer with interests in game, level and systems design</h1>
                 <h3 style="font-size: 25px;">Focused on creating engaging interactive experiences by exploring gameplay, mechanics and palyer experience.
                     I work across creative and technical aspects of game development and enjoy continuously expanding my skills through hands-on projects.</p>
@@ -47,8 +48,7 @@
             
         </div>
 
-     <!--   <div class="bg_glow" style="--x: 50; --y: 0; --cl: #dc550650"></div>-->
-        <div class="section" style="--Background: url('src/img/banner_wood.jpg'); padding: 170px 0px;">
+        <div class="section_skills">
             <div class="frame">
                 <h3>Code Experience</h3>
                 <div class="grid">
@@ -105,38 +105,35 @@
                 </div>
             </div>
         </div>
-        <div class="section" style="--Background: url('src/img/Background.png');">
+        <div class="section_projects">
             <h2>Highlighted Projects</h2>
-            <div class="divider"></div>
+            <hr class="divider" />
             <div class="block">
                 <div>
                     <img src="src\img\Electrician\Edu_circuit.png" alt="Project 1 Screenshot" onclick="openModal('Electrician/Edu_circuit.png')">
                 </div>
                 <div>
                     <h3>Circuit Education Game</h3>
-                    <p>
-                        Educational game designed to teach basic circuit concepts to students.
-                        The game features interactive puzzles and challenges that require players to apply their knowledge of circuits to progress through levels.
-                        This project is currently in development as part of my bechelor thesis, and I am responsible for both the design and development of the game.
-                    </p>
+                    <p>Educational puzzle game designed as part of a bachelor thesis to teach fundamental circuit concepts through interactive gameplay.
+                        The game translates basic electrical principles into gameplay mechanics, where players solve progressively complex circuit-based puzzles to advance through levels.
+                        Core design focuses on learning through interaction, requiring players to understand and apply circuit logic rather than memorizing concepts, with mechanics structured around experimentation, problem-solving, and immediate feedback.
+                        The project is both designed and developed independently, covering gameplay systems, level design, and implementation.</p>
                     <div class="block">
-                        <a href="" target="_blank">View Project on GitHub</a>
+                        <a href="https://github.com/JakPik/BP_edu_elektro" target="_blank">View Project on GitHub</a>
                         <a href="" target="_blank">More info</a>
                     </div>
                 </div>
             </div>
-            <div class="divider"></div>
+            <hr class="divider" />
             <div class="block">
                 <div>
                     <h3>Digital D&D Character Sheet</h3>
-                    <p>
-                        Windows application developed using WPF.
-                        The application allows users to create and manage their Dungeons & Dragons character sheets digitally, providing an intuitive interface for tracking character stats, inventory, and abilities.
-                        This project was developed as part of a school assignment, and I was responsible for the entire development process, from design to implementation.
-                        The motivation behind this project was to create app that would be more flexible for users to not only choose D&D content but also to add custom homebrew content.
-                    </p>
+                    <p>Interactive desktop tool for managing Dungeons & Dragons character sheets, built in WPF as a modular, real-time editing system.
+                        The application replaces traditional static character sheets with a dynamic digital interface designed to reduce in-game friction. It combines character stats, inventory, and session notes into a unified workspace optimized for fast updates during gameplay.
+                        A key design focus was flexibility and extensibility, including class-specific UI behavior, multiple editing modes (safe bulk editing, modal item editing, and notes management), and support for homebrew content.
+                        The system is built using a modular architecture with independent WPF User Controls and event-driven updates, enabling scalable UI expansion and maintainability.</p>
                     <div class="block">
-                        <a href="" target="_blank">View Project on GitHub</a>
+                        <a href="https://github.com/JakPik/Interactive-DnD-Character-Sheet" target="_blank">View Project on GitHub</a>
                         <a href="" target="_blank">More info</a>
                     </div>
                 </div>
@@ -144,40 +141,21 @@
                     <img src="src\img\Digital_DnD_CharSheet\BaseCharacterView.png" alt="Project 1 Screenshot" onclick="openModal('Digital_DnD_CharSheet/BaseCharacterView.png')">
                 </div>
             </div>
-            <div class="divider"></div>
+            <hr class="divider" />
             <div class="block">
                 <div>
-                    <img src="src\img\DnD_Homebrew\Ranger_Beast Master.png" alt="Project 1 Screenshot" onclick="openModal('DnD_Homebrew/Ranger_Beast Master.png')">
+                    <img src="src\img\DnD_webViewer\NPC_NotesView.png" alt="Project 1 Screenshot" onclick="openModal('DnD_webViewer/NPC_NotesView.png')">
                 </div>
                 <div>
-                    <h3>D&D Homebrew: Ranger, Best Master </h3>
-                    <p>
-                        Custom rework of the Dungeons & Dragons 5th Edition Ranger class, with a focus on the Beast Master archetype.
-                        The rework focuses on adressing the perceived weaknesses of the original Beast Master subclass, such as the underwhelming combat capabilities of the animal companion and the lack of synergy between the ranger and their companion.
-                        But it is also not limited just to the archetype as it adresses the low flexibility and situation-dependence of the ranger class as a whole.
-                    </p>
+                    <h3>D&D campaign notes web viewer</h3>
+                    <p>"Web-based tool for managing and visualizing Dungeons & Dragons campaign notes, designed for multi-party use with role-based content visibility.
+                        The system allows structured world and session note organization with support for markdown rendering, enabling readable and maintainable campaign documentation.
+                        A key feature is selective content visibility, allowing different player groups or individual players to access only relevant in-world information, supporting multiple parallel campaigns within a shared system.
+                        The tool was developed primarily for personal use and is actively used to support multiple D&D parties by providing a centralized hub for worldbuilding and session tracking.</p>
                     <div class="block">
-                        <a href="" target="_blank">View Project on GitHub</a>
+                        <a href="https://github.com/JakPik/Rise-of-the-Empire" target="_blank">View Project on GitHub</a>
                         <a href="" target="_blank">More info</a>
                     </div>
-                </div>
-            </div>
-            <div class="divider"></div>
-            <div class="block">
-                <div>
-                    <h3>Acura NSX: 3D game asset</h3>
-                    <p>
-                        3D model of the Acura NSX sports car, created using Blender.
-                        This model was created as part of a school assignment focused on 3D modeling, texturing techniques and optimization for game assets.
-                        I choosed this particular car model due to its complex design and sleek aesthetics, which provided a challenging yet rewarding modeling experience.
-                    </p>
-                    <div class="block">
-                        <a href="" target="_blank">View Project on GitHub</a>
-                        <a href="" target="_blank">More info</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="src\img\AcuraNSX\Acura_NSX.png" alt="Acura NSX 3D Model render" onclick="openModal('AcuraNSX/Acura_NSX.png')">
                 </div>
             </div>
         </div>

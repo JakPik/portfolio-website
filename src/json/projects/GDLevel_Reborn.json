@@ -4,9 +4,10 @@
         "LEVEL_DESIGN", "GAME_DESIGN"
     ],
     "description": [
-        "Level created within level edito in Geomatry Dash level.",
-        "This level was made to showcase my current skill and as to release proper level at 7 start rating.",
-        "As of this moment the level was not released due to the problems of level publishing on the platform."
+        "Custom Geometry Dash level designed to demonstrate advanced level design skills with a target difficulty of 7★. ",
+        "The level focuses on structured pacing, obstacle timing, and progression of mechanical complexity, aiming to create a balanced experience that challenges player reflexes while maintaining readability. ",
+        "It was developed as a personal design showcase within the Geometry Dash level editor, focusing on refining timing-based gameplay flow and difficulty tuning. ",
+        "The level remains unpublished due to platform-related publishing constraints."
     ],
     "images": [],
     "page": null,

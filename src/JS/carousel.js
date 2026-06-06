@@ -10,7 +10,7 @@
     const carousel_track = document.createElement('div')
     carousel_track.classList.add("carousel-track")
     images.forEach(img => {
-        const image = BuildImage(img, 150)
+        const image = BuildImage(img)
         carousel_track.appendChild(image)
     })
 
@@ -28,7 +28,7 @@
     container.appendChild(carousel)
     if(images.length > 1) { container.appendChild(next_b) }
     carousel_track.children[0].onload = () => {
-            var h = 150;
+            var h = 100;
             const width = +carousel_track.children[0].width / ( +carousel_track.children[0].height / +h);
             carousel.style.width = +carousel_track.children[0].width + 'px';
         };
@@ -45,22 +45,21 @@ function spinCarousel(offset, carousel) {
 
 function updateCarousel(carousel) {
   
-  const track = carousel.getElementsByClassName('carousel-track')[0];
-  const curIdx = +carousel.dataset.currentIndex;
-  let width = 0;
-  for(let i = 0; i < curIdx; i++) {
-    width += track.children[i].clientWidth;
-  }
-  
-  carousel.style.width = track.children[curIdx].clientWidth + 'px';
-  track.style.transform = `translateX(-${width}px)`;
+    const track = carousel.getElementsByClassName('carousel-track')[0];
+    const curIdx = +carousel.dataset.currentIndex;
+    let width = 0;
+    for(let i = 0; i < curIdx; i++) {
+        width += track.children[i].clientWidth;
+    }
+    carousel.style.width = track.children[curIdx].clientWidth + 'px';
+    track.style.transform = `translateX(-${width}px)`;
 }
 
-function BuildImage(src, height) {
+function BuildImage(src) {
     const img = document.createElement('img');
     img.src = "./src/img/" + src;
     img.alt = src;
-    img.style.height = height + 'px';
+    img.style.height = '100px';
     img.className = 'zoomable';
     img.onclick = openModal;
     return img;

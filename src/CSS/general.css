@@ -20,7 +20,7 @@ h3 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     margin: 5;
 }
 
@@ -30,66 +30,6 @@ body {
     min-height: 100vh;   
     background-color: #000000;
     margin: 0;
-}
-
-button {
-    border-radius: 8px;
-    border-color: rgba(255, 255, 255, 0.5);
-    border-style:solid;
-    background-color: rgba(173, 216, 230, 0.05);
-    color: white;
-    font-size: 12px;
-    height: 32px;
-    width: 80px;
-    top: 0px;
-    z-index: 2;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 24px;
-    width:fit-content;
-    margin: 10px 10px;
-    box-shadow: 0px 0px 15px rgba(173, 174, 230, 0.45);
-    transition: box-shadow 0.8s ease,
-                background-color 0.8s ease,
-                border-color 0.3s ease;
-}
-
-button:hover {
-    cursor: pointer;
-    box-shadow: 5px 5px 10px rgba(173, 174, 230, 0.75);
-    background-color: rgba(173, 216, 230, 0.2);
-    border-color: rgb(255, 255, 255);
-}
-
-#home {
-display: flex;
-justify-self: left;
-}
-
-header {
-    position: relative;
-    justify-content: center;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    padding-top: 10px;
-    border-bottom: 1px solid white;
-    width: 100%;
-    border-radius: 0px 0px 10px 10px;
-    background: radial-gradient(100% 300px at 50% 0%, #dc550650, black, black);
-    backdrop-filter: blur(10px);
-}
-
-header img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-header i {
-    font-size: 20px;
 }
 
 .modal {
@@ -110,4 +50,17 @@ header i {
   max-height: 90%;
   border-radius: 10px;
   box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+}
+
+
+hr {
+    border-image: linear-gradient(
+        to right,
+        #ffffff00 1%,
+        #ffffff 30%,
+        #ffffff 70%,
+        #ffffff00 100%
+    ) 1;
+    display: block;
+    margin: 0px 20px;
 }

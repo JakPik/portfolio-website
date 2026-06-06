@@ -1,14 +1,19 @@
 {
-    "title": "Markdown D&D notes web viewer",
+    "title": "D&D campaign notes web viewer",
     "tags": [
         "TOOLING", "SOFTWARE_DEV", "WORLD_BUILDING", "TABLETOP"
     ],
     "description": [
-        "This project was made as tool to help me and my friends organize and visualise D&D notes.",
-        "I did most of coding of the web page with all it features like: displaying stylised markdowns, controling player view, parsing data and so on.",
-        "Currently the project serves my friend who DMs as hub for his 3 D&D parties to store and share world and story notes."
+        "Web-based tool for managing and visualizing Dungeons & Dragons campaign notes, designed for multi-party use with role-based content visibility. ",
+        "The system allows structured world and session note organization with support for markdown rendering, enabling readable and maintainable campaign documentation. ",
+        "A key feature is selective content visibility, allowing different player groups or individual players to access only relevant in-world information, supporting multiple parallel campaigns within a shared system. ",
+        "The tool was developed primarily for personal use and is actively used to support multiple D&D parties by providing a centralized hub for worldbuilding and session tracking."
     ],
-    "images": [],
+    "images": [
+        "DnD_webViewer/CampaignSelectionPage.png",
+        "DnD_webViewer/NPC_NotesView.png",
+        "DnD_webViewer/SessionNoteView.png",
+        "DnD_webViewer/MapView.png"],
     "page": null,
     "src": {
         "button_label": "GITHUB",

@@ -91,38 +91,52 @@ async function init() {
         console.log("Can not load projects.json")
     }
     cur_tag = "ALL"
-    cur_button = document.querySelector('.selected')
+    cur_button = document.querySelector('.content_layout button.selected')
 
     const content = document.querySelector('.content')
     content.classList.add("hidden")
     content.innerHTML = "";
 
     let delay = 100;
+    const cards = Array(10).fill(null)
+    let ids = 0
     proj_json.projects.forEach(async (element) => {
         try {
+            const id = ids
+            ids++
             const rest = await fetch("./src/json/projects/" + element + ".json")
             .then(res => res.json())
             .then(_data => {
                 const data = _data
                 const card = cardBuilder(data)
 
-                content.appendChild(card)
-                content.classList.remove("hidden")
-                setTimeout(() => {
-                    card.classList.remove("hidden");
-                }, delay);
-
-                delay += 300;
+                cards[id] = card
 
 
             })
         }
         catch {
-            console.log("Failed to load" + element)
-            return
+            const card = cardBuilder(element)
+
+            content.appendChild(card)
+            content.classList.remove("hidden")
+            setTimeout(() => {
+                card.classList.remove("hidden");
+            }, delay);
+
+            delay += 300;
+            return;
         }
-        
     });
+    cards.forEach(card => {
+            content.appendChild(card)
+            content.classList.remove("hidden")
+            setTimeout(() => {
+                card.classList.remove("hidden");
+            }, delay);
+
+            delay += 300;
+        })
 }
 
 function cardBuilder(element) {

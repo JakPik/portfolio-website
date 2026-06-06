@@ -4,9 +4,10 @@
         "SOFTWARE_DEV", "UI_UX", "ACADEMIC"
     ],
     "description": [
-        "Workout log app that allows adding own exercises and then using them in your workout plan.",
-        "App can be used both for planing future workouts as well as loging current ongoing session.",
-        "The project has potecial for expanding to other types of workouts like cycling, running, swimming tracking."
+        "Android application for creating, managing, and logging workout sessions with a focus on fast, structured input during training. ",
+        "The app supports both workout planning and real-time session tracking, allowing users to build custom exercise sets and record performance during ongoing workouts. ",
+        "The design emphasizes flexibility and extensibility, enabling support for multiple training types such as strength training, running, cycling, and swimming through a unified workout structure. ",
+        "The project was developed as part of a university assignment, focusing on UI/UX design and mobile application development principles."
     ],
     "images": [],
     "page": null,

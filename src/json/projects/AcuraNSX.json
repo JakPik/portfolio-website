@@ -4,9 +4,9 @@
         "TD_ART", "GAME_DESIGN", "ACADEMIC"
     ],
     "description": [
-        "3D model of the Acura NSX sports car, created using Blender.",
-        "This model was created as part of a school assignment focused on 3D modeling, texturing techniques and optimization for game assets.",
-        "I choosed this particular car model due to its complex design and sleek aesthetics, which provided a challenging yet rewarding modeling experience."
+        "3D game-ready model of the Acura NSX created in Blender as part of a university assignment focused on asset production and optimization. ",
+        "The project explores a full game asset pipeline, including a high-poly model, optimized low-poly version, and multiple LOD (Level of Detail) variants to support real-time rendering. ",
+        "The NSX was chosen for its complex surface design and topology challenges, making it a suitable subject for practicing clean modeling, edge flow, and optimization techniques required in game development workflows."
     ],
     "images": ["AcuraNSX/Acura_NSX.png"],
     "page": null,

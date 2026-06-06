@@ -4,15 +4,15 @@
         "SOFTWARE_DEV", "UI_UX", "ACADEMIC"
     ],
     "description": [
-        "Windows application developed using WPF.",
-            "The application allows users to create and manage their Dungeons & Dragons character sheets digitally, providing an intuitive interface for tracking character stats, inventory, and abilities.",
-            "This project was developed as part of a school assignment, and I was responsible for the entire development process, from design to implementation.",
-            "The motivation behind this project was to create app that would be more flexible for users to not only choose D&D content but also to add custom homebrew content."
+        "Interactive desktop tool for managing Dungeons & Dragons character sheets, built in WPF as a modular, real-time editing system. ",
+        "The application replaces traditional static character sheets with a dynamic digital interface designed to reduce in-game friction. It combines character stats, inventory, and session notes into a unified workspace optimized for fast updates during gameplay. ",
+        "A key design focus was flexibility and extensibility, including class-specific UI behavior, multiple editing modes (safe bulk editing, modal item editing, and notes management), and support for homebrew content. ",
+        "The system is built using a modular architecture with independent WPF User Controls and event-driven updates, enabling scalable UI expansion and maintainability."
         ],
     "images": ["Digital_DnD_CharSheet/BaseCharacterView.png"],
-    "page": "page url",
+    "page": null,
     "src": {
-        "button_label": "Project on Github",
-        "button_url": ""
+        "button_label": "GITHUB",
+        "button_url": "https://github.com/JakPik/Interactive-DnD-Character-Sheet"
     }
 }

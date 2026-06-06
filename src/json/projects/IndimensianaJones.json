@@ -4,9 +4,9 @@
         "GAME_DEV", "GAME_DESIGN", "LEVEL_DESIGN", "ACADEMIC"
     ],
     "description": [
-        "Point and Click puzzle game made as part of my course work.",
-        "This project is work of a team of 4 people, where my part was leading, animation, SFX, trailer and helping with design choices and implementations.",
-        "On this project i helped to manage and guide team of more proficient and less proficient people with game dev, and helped structure deadlines, time plans around our artists time capabilities."
+        "Point-and-click puzzle game developed as a four-person university project. ",
+        "The gameplay focuses on solving logic puzzles by interacting with objects across connected scenes, requiring the player to combine or transfer items between locations to progress. ",
+        "My responsibilities included gameplay support, animation, sound effects, and production of the game trailer. I also assisted with team coordination by helping organize task distribution and supporting timeline planning based on team members’ availability and skill levels."
     ],
     "images": [],
     "page": null,

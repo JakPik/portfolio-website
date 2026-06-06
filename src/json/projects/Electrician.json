@@ -4,9 +4,10 @@
         "GAME_DEV", "GAME_DESIGN", "EDUCATION", "ACADEMIC"
     ],
     "description": [
-        "Educational game designed to teach basic circuit concepts to students.",
-        "The game features interactive puzzles and challenges that require players to apply their knowledge of circuits to progress through levels.",
-        "This project is currently in development as part of my bechelor thesis, and I am responsible for both the design and development of the game."
+        "Educational puzzle game designed as part of a bachelor thesis to teach fundamental circuit concepts through interactive gameplay. ",
+        "The game translates basic electrical principles into gameplay mechanics, where players solve progressively complex circuit-based puzzles to advance through levels. ",
+        "Core design focuses on learning through interaction, requiring players to understand and apply circuit logic rather than memorizing concepts, with mechanics structured around experimentation, problem-solving, and immediate feedback. ",
+        "The project is both designed and developed independently, covering gameplay systems, level design, and implementation."
     ],
     "images": ["Electrician/Edu_circuit.png"],
     "page": null,
