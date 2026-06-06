@@ -76,7 +76,7 @@ function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }   
 
-async function loadJson() {
+function loadJson() {
 try {
     const rest = await fetch("./src/json/projects.json")
   .then(res => res.json())
