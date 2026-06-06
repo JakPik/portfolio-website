@@ -104,21 +104,24 @@ async function init() {
             .then(res => res.json())
             .then(_data => {
                 const data = _data
+                const card = cardBuilder(data)
+
+                content.appendChild(card)
+                content.classList.remove("hidden")
+                setTimeout(() => {
+                    card.classList.remove("hidden");
+                }, delay);
+
+                delay += 300;
+
+
             })
         }
         catch {
             console.log("Failed to load" + element)
             return
         }
-        const card = cardBuilder(data)
-
-        content.appendChild(card)
-        content.classList.remove("hidden")
-        setTimeout(() => {
-            card.classList.remove("hidden");
-        }, delay);
-
-        delay += 300;
+        
     });
 }
 
