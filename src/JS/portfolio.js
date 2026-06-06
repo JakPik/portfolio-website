@@ -7,7 +7,7 @@ let proj_json = JSON.parse(proj)
 let cur_tag = ""
 let cur_button
 
-let card_ref = []
+let cards = []
 
 
 function constructTags(list) {
@@ -54,13 +54,13 @@ async function loadProjects(tag, button) {
     let delay = 100;
     content.classList.add("hidden")
 
-    card_ref.forEach(card => { card.ref.classList.add("hidden")})
+    cards.forEach(card => { card.ref.classList.add("hidden")})
 
     await wait(500)
-    card_ref.forEach(card => { card.ref.classList.add("notDisplayed")})
+    cards.forEach(card => { card.ref.classList.add("notDisplayed")})
     await wait(500)
 
-    card_ref.forEach(card => {
+    cards.forEach(card => {
         if(tag == "ALL" || card.tags.some(_tag => /*CONSTANTS.*/FILTER_TAGS[tag].includes(_tag))) {
             card.ref.classList.remove("notDisplayed");
             setTimeout(() => {
@@ -98,7 +98,7 @@ async function init() {
     content.innerHTML = "";
 
     let delay = 100;
-    const cards = Array(proj_json.length).fill(null)
+    cards = Array(proj_json.length).fill(null)
     let ids = 0
     const promises = proj_json.projects.map(async (element) => {
         try {
@@ -108,7 +108,10 @@ async function init() {
             const data = await res.json();
 
             const card = cardBuilder(data);
-            cards[id] = card;
+            cards[id] = {
+                ref: card,
+                tags: data.tags
+            };
 
         } catch (e) {
             const card = cardBuilder(element);
