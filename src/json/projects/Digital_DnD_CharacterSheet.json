@@ -1,0 +1,18 @@
+{
+    "title": "Digital D&D Character Sheet",
+    "tags": [
+        "SOFTWARE_DEV", "UI_UX", "ACADEMIC"
+    ],
+    "description": [
+        "Windows application developed using WPF.",
+            "The application allows users to create and manage their Dungeons & Dragons character sheets digitally, providing an intuitive interface for tracking character stats, inventory, and abilities.",
+            "This project was developed as part of a school assignment, and I was responsible for the entire development process, from design to implementation.",
+            "The motivation behind this project was to create app that would be more flexible for users to not only choose D&D content but also to add custom homebrew content."
+        ],
+    "images": ["Digital_DnD_CharSheet/BaseCharacterView.png"],
+    "page": "page url",
+    "src": {
+        "button_label": "Project on Github",
+        "button_url": ""
+    }
+}

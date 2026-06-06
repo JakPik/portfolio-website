@@ -51,11 +51,11 @@
     border-radius: 10px;
     margin: 20px;
     backdrop-filter:blur(5px);
-    transition: all 0.6s ease-out;
+    transition: all 0.6s ease;
 }
 
 .content.hidden {
-    content-visibility: hidden;
+    fill-opacity: 0;
 }
 
 .card {
@@ -73,7 +73,11 @@
 
 .card.hidden {
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(100px);
+}
+
+.card.notDisplayed {
+    display: none;
 }
 
 .card .header div h2 {
@@ -200,3 +204,4 @@ button.prev, button.next {
   margin: 5px;
 }
 button.prev:hover, button.next:hover { background: rgba(0, 0, 0, 0.3); }
+

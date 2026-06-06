@@ -56,8 +56,13 @@ const TAGS = {
   ACADEMIC: "Academic Work"
 };
 
-export {
+const URL_LABELS = {
+  GITHUB: "Project on Github",
+  PDF: "View PDF"
+}
+
+/*export {
     FILTERS,
     FILTER_TAGS,
     TAGS
-};
+};*/

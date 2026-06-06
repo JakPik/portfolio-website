@@ -1,0 +1,17 @@
+{
+    "title": "Electrician",
+    "tags": [
+        "GAME_DEV", "GAME_DESIGN", "EDUCATION", "ACADEMIC"
+    ],
+    "description": [
+        "Educational game designed to teach basic circuit concepts to students.",
+        "The game features interactive puzzles and challenges that require players to apply their knowledge of circuits to progress through levels.",
+        "This project is currently in development as part of my bechelor thesis, and I am responsible for both the design and development of the game."
+    ],
+    "images": ["Electrician/Edu_circuit.png"],
+    "page": null,
+    "src": {
+        "button_label": "GITHUB",
+        "button_url": "https://github.com/JakPik/BP_edu_elektro"
+    }
+}

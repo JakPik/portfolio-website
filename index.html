@@ -11,6 +11,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
+        <div id="imageModal" class="modal" style="display: none;" onclick="closeModal()">
+            <img class="modal-content" id="modalImage" alt="modalImage" src="./src/img/Electrician/Edu_circuit.png">
+        </div>
         <header>
             <button class="selected_button" id="home" >
                 <img src="src\img\JP_logo.png" alt="JP_logo">
@@ -107,7 +110,7 @@
             <div class="divider"></div>
             <div class="block">
                 <div>
-                    <img src="src\img\Edu_circuit.png" alt="Project 1 Screenshot">
+                    <img src="src\img\Electrician\Edu_circuit.png" alt="Project 1 Screenshot" onclick="openModal('Electrician/Edu_circuit.png')">
                 </div>
                 <div>
                     <h3>Circuit Education Game</h3>
@@ -138,13 +141,13 @@
                     </div>
                 </div>
                 <div>
-                    <img src="src\img\Base_Character_View.png" alt="Project 1 Screenshot">
+                    <img src="src\img\Digital_DnD_CharSheet\BaseCharacterView.png" alt="Project 1 Screenshot" onclick="openModal('Digital_DnD_CharSheet/BaseCharacterView.png')">
                 </div>
             </div>
             <div class="divider"></div>
             <div class="block">
                 <div>
-                    <img src="src\img\Ranger_Beast Master.png" alt="Project 1 Screenshot">
+                    <img src="src\img\DnD_Homebrew\Ranger_Beast Master.png" alt="Project 1 Screenshot" onclick="openModal('DnD_Homebrew/Ranger_Beast Master.png')">
                 </div>
                 <div>
                     <h3>D&D Homebrew: Ranger, Best Master </h3>
@@ -174,10 +177,11 @@
                     </div>
                 </div>
                 <div>
-                    <img src="src\img\Acura_NSX.png" alt="Acura NSX 3D Model render">
+                    <img src="src\img\AcuraNSX\Acura_NSX.png" alt="Acura NSX 3D Model render" onclick="openModal('AcuraNSX/Acura_NSX.png')">
                 </div>
             </div>
         </div>
     </body>
+    <script src="src/JS/modalControl.js"></script>
     <script src="src/JS/main.js"></script>
 </html>

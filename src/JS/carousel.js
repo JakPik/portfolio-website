@@ -1,4 +1,4 @@
-export function constructCarousel(images) {
+/*export*/ function constructCarousel(images) {
     const container = document.createElement('div')
     container.classList.add("container")
 
@@ -54,4 +54,14 @@ function updateCarousel(carousel) {
   
   carousel.style.width = track.children[curIdx].clientWidth + 'px';
   track.style.transform = `translateX(-${width}px)`;
+}
+
+function BuildImage(src, height) {
+    const img = document.createElement('img');
+    img.src = "./src/img/" + src;
+    img.alt = src;
+    img.style.height = height + 'px';
+    img.className = 'zoomable';
+    img.onclick = openModal;
+    return img;
 }

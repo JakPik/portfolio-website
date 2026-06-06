@@ -1,0 +1,17 @@
+{
+    "title": "Markdown D&D notes web viewer",
+    "tags": [
+        "TOOLING", "SOFTWARE_DEV", "WORLD_BUILDING", "TABLETOP"
+    ],
+    "description": [
+        "This project was made as tool to help me and my friends organize and visualise D&D notes.",
+        "I did most of coding of the web page with all it features like: displaying stylised markdowns, controling player view, parsing data and so on.",
+        "Currently the project serves my friend who DMs as hub for his 3 D&D parties to store and share world and story notes."
+    ],
+    "images": [],
+    "page": null,
+    "src": {
+        "button_label": "GITHUB",
+        "button_url": "https://github.com/JakPik/Rise-of-the-Empire"
+    }
+}

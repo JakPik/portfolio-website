@@ -1,0 +1,17 @@
+{
+    "title": "D&D Ranger Beast Master rework",
+    "tags": [
+        "TABLETOP", "GAME_DESIGN", "WORLD_BUILDING"
+    ],
+    "description": [
+        "Custom rework of the Dungeons & Dragons 5th Edition Ranger class, with a focus on the Beast Master archetype.",
+        "The rework focuses on adressing the perceived weaknesses of the original Beast Master subclass, such as the underwhelming combat capabilities of the animal companion and the lack of synergy between the ranger and their companion.",
+        "But it is also not limited just to the archetype as it adresses the low flexibility and situation-dependence of the ranger class as a whole."
+    ],
+    "images": ["DnD_Homebrew/Ranger_Beast Master.png"],
+    "page": null,
+    "src": {
+        "button_label": "PDF",
+        "button_url": "https://homebrewery.naturalcrit.com/share/l9DhVzxzMbL0"
+    }
+}

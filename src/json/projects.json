@@ -1,125 +1,13 @@
 {
     "projects": [
-        {
-            "title": "Digital D&D Character Sheet",
-            "tags": [
-                "SOFTWARE_DEV", "UI_UX", "ACADEMIC"
-            ],
-            "description": ["Windows application developed using WPF.",
-                        "The application allows users to create and manage their Dungeons & Dragons character sheets digitally, providing an intuitive interface for tracking character stats, inventory, and abilities.",
-                        "This project was developed as part of a school assignment, and I was responsible for the entire development process, from design to implementation.",
-                        "The motivation behind this project was to create app that would be more flexible for users to not only choose D&D content but also to add custom homebrew content."
-                    ],
-            "images": ["SOFTWARE_DEV", "UI_UX", "ACADEMIC"],
-            "page": "page url",
-            "src": {
-                "button_label": "Project on Github",
-                "button_url": ""
-            }
-        },
-        {
-            "title": "Indimensiana Jones",
-            "tags": [
-                "GAME_DEV", "GAME_DESIGN", "LEVEL_DESIGN", "ACADEMIC"
-            ],
-            "description": "Long text",
-            "images": ["url1", "url2"],
-            "page": "page url",
-            "src": {
-                "button_label": "",
-                "button_url": ""
-            }
-        },
-        {
-            "title": "Electrician",
-            "tags": [
-                "GAME_DEV", "GAME_DESIGN", "EDUCATION", "ACADEMIC"
-            ],
-            "description": "Long text",
-            "images": ["url1", "url2"],
-            "page": "page url",
-            "src": {
-                "button_label": "",
-                "button_url": ""
-            }
-        },
-        {
-            "title": "D&D Ranger Beast Master rework",
-            "tags": [
-                "TABLETOP", "GAME_DESIGN", "WORLD_BUILDING"
-            ],
-            "description": "Long text",
-            "images": ["url1", "url2"],
-            "page": "page url",
-            "src": {
-                "button_label": "View PDF",
-                "button_url": "https://homebrewery.naturalcrit.com/share/l9DhVzxzMbL0"
-            }
-        },
-        {
-            "title": "Worldbuilding project",
-            "tags": [
-                "WORLD_BUILDING", "TABLETOP"
-            ],
-            "description": "Long text",
-            "images": ["url1", "url2"],
-            "page": "page url",
-            "src": {
-                "button_label": null,
-                "button_url": "test"
-            }
-        },
-        {
-            "title": "Geometry Dash level - Reborn",
-            "tags": [
-                "LEVEL_DESIGN", "GAME_DESIGN"
-            ],
-            "description": "Long text",
-            "images": ["url1", "url2"],
-            "page": "page url",
-            "src": {
-                "button_label": null,
-                "button_url": "test"
-            }
-        },
-        {
-            "title": "Android Workout Log App",
-            "tags": [
-                "SOFTWARE_DEV", "UI_UX", "ACADEMIC"
-            ],
-            "description": "Long text",
-            "images": ["url1", "url2"],
-            "page": "page url",
-            "src": {
-                "button_label": null,
-                "button_url": "test"
-            }
-        },
-        {
-            "title": "Arima",
-            "tags": [
-                "GAME_DEV", "SOFTWARE_DEV", "GAME_DESIGN", "ACADEMIC"
-            ],
-            "description": "Long text",
-            "images": ["url1", "url2"],
-            "page": "page url",
-            "src": {
-                "button_label": null,
-                "button_url": "test"
-            }
-        },
-        {
-            "title": "GitHub Markdown D&D web viewer",
-            "tags": [
-                "TOOLING", "SOFTWARE_DEV", "WORLD_BUILDING", "TABLETOP"
-            ],
-            "description": "Long text",
-            "images": ["url1", "url2"],
-            "page": "page url",
-            "src": {
-                "button_label": null,
-                "button_url": "test"
-            }
-        }
+        "Electrician",
+        "Digital_DnD_CharacterSheet",
+        "DnD_RangerBeastMaster",
+        "AcuraNSX",
+        "Arimaa",
+        "DnD_WebViewer",
+        "GDLevel_Reborn",
+        "WorkoutApp",
+        "IndimensianaJones"
     ]
 }

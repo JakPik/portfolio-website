@@ -1,4 +1,4 @@
-export const proj = `{
+/*export*/ const proj = `{
     "projects": [
         {
             "title": "Digital D&D Character Sheet",
