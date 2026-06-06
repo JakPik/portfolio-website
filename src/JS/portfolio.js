@@ -120,14 +120,14 @@ async function init() {
     });
 
     Promise.all(promises).then(() => {
-        let delay = 0;
+        let delay = 100;
 
         cards.forEach(card => {
-            content.appendChild(card);
+            content.appendChild(card.ref);
             content.classList.remove("hidden");
 
             setTimeout(() => {
-                card.classList.remove("hidden");
+                card.ref.classList.remove("hidden");
             }, delay);
 
             delay += 300;
