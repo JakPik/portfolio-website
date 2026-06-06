@@ -180,9 +180,5 @@ function cardBuilder(element) {
     card.appendChild(text)
     card.appendChild(links)
 
-    card_ref.push({
-        ref: card,
-        tags: element.tags
-    })
     return card
 }
