@@ -100,43 +100,36 @@ async function init() {
     let delay = 100;
     const cards = Array(10).fill(null)
     let ids = 0
-    proj_json.projects.forEach(async (element) => {
+    const promises = proj_json.projects.map(async (element) => {
         try {
-            const id = ids
-            ids++
-            const rest = await fetch("./src/json/projects/" + element + ".json")
-            .then(res => res.json())
-            .then(_data => {
-                const data = _data
-                const card = cardBuilder(data)
+            const id = ids++;
+            
+            const res = await fetch("./src/json/projects/" + element + ".json");
+            const data = await res.json();
 
-                cards[id] = card
+            const card = cardBuilder(data);
+            cards[id] = card;
 
-
-            })
-        }
-        catch {
-            const card = cardBuilder(element)
-
-            content.appendChild(card)
-            content.classList.remove("hidden")
-            setTimeout(() => {
-                card.classList.remove("hidden");
-            }, delay);
-
-            delay += 300;
-            return;
+        } catch (e) {
+            const card = cardBuilder(element);
+            cards.push(card);
         }
     });
-    cards.forEach(card => {
-            content.appendChild(card)
-            content.classList.remove("hidden")
+
+    Promise.all(promises).then(() => {
+        let delay = 0;
+
+        cards.forEach(card => {
+            content.appendChild(card);
+            content.classList.remove("hidden");
+
             setTimeout(() => {
                 card.classList.remove("hidden");
             }, delay);
 
             delay += 300;
-        })
+        });
+    });
 }
 
 function cardBuilder(element) {
