@@ -101,7 +101,7 @@ async function init() {
     content.innerHTML = "";
 
     let delay = 100;
-    proj_json.projects.forEach(element => {
+    proj_json.projects.forEach(async (element) => {
         try {
             const rest = await fetch("./src/json/projects/" + element + ".json")
             .then(res => res.json())
