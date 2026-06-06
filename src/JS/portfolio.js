@@ -98,7 +98,7 @@ async function init() {
     content.innerHTML = "";
 
     let delay = 100;
-    const cards = Array(10).fill(null)
+    const cards = Array(proj_json.length).fill(null)
     let ids = 0
     const promises = proj_json.projects.map(async (element) => {
         try {
