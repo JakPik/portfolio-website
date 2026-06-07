@@ -8,7 +8,7 @@
         "The project focuses on translating a rule-heavy abstract strategy game into a fully functional digital version, handling complex game states and move validation logic. ",
         "Development started from a command-line prototype and was later extended into a full graphical user interface, covering both core game logic and user interaction layers within a single Java codebase."
     ],
-    "images": [],
+    "images": ["Arimaa/MainMenu.png", "Arimaa/GameBoard.png"],
     "page": null,
     "src": null
 }

@@ -58,7 +58,8 @@ const TAGS = {
 
 const URL_LABELS = {
   GITHUB: "Project on Github",
-  PDF: "View PDF"
+  PDF: "View PDF",
+  WEBPLAY: "Play on web"
 }
 
 /*export {

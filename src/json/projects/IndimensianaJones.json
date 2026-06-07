@@ -8,7 +8,10 @@
         "The gameplay focuses on solving logic puzzles by interacting with objects across connected scenes, requiring the player to combine or transfer items between locations to progress. ",
         "My responsibilities included gameplay support, animation, sound effects, and production of the game trailer. I also assisted with team coordination by helping organize task distribution and supporting timeline planning based on team members’ availability and skill levels."
     ],
-    "images": [],
+    "images": ["IndimensianaJones/Screen_1.png","IndimensianaJones/Screen_2.png","IndimensianaJones/Screen_3.png"],
     "page": null,
-    "src": null
+    "src": {
+        "button_label": "WEBPLAY",
+        "button_url": "https://cent.felk.cvut.cz/courses/39HRY/archives/2024-2025/team13/web-bin/index.html"
+    }
 }
